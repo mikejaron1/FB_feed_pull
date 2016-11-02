@@ -1,3 +1,5 @@
+This will take a list of Facebook pages and calls the API to get feed data, all comments and likes for each comment for each page and outputs that to a csv.
+
 Edit the config file for all of the general changes listed below.
 
 auth = [auth from facebook],
