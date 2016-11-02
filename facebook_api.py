@@ -234,16 +234,17 @@ if __name__ == '__main__':
 		page_ids = [test_store]
 		difference = page_ids
 	else:
-		## for new dataset with FB users
-		# df = pd.read_csv(file_name)
-		# page_ids = df['FacebookId']
-		# page_ids = page_ids.dropna()
-		# page_ids = [int(page) for page in page_ids]  #change it from float
-
-		# for original dataset
-		df = pd.read_csv(file_name)
-		page_ids = df['fblink']
-		page_ids = [page[page.find('com/')+4:] for page in page_ids]
+		if supercenter_file == False:
+			## for new dataset with FB users
+			df = pd.read_csv(file_name)
+			page_ids = df['FacebookId']
+			page_ids = page_ids.dropna()
+			page_ids = [int(page) for page in page_ids]  #change it from float
+		else:
+			# for original dataset
+			df = pd.read_csv(file_name)
+			page_ids = df['fblink']
+			page_ids = [page[page.find('com/')+4:] for page in page_ids]
 
 		## find what has already been done
 		difference = list(set(page_ids) - set(done_files) - set(does_not_exist))

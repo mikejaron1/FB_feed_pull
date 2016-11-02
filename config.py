@@ -7,17 +7,19 @@ import os
 import pandas as pd
 
 ## auth expires about every hour
-auth = "EAACEdEose0cBAGKZBxxhlwodKC76h1xueiv9d65qplZBZAJ8rOh1RZCe5W642KVyxOJXHyZAZC7sAG27H32gdpVlSLi8mhJbVRjYk9ThP3IbJLc5SdbO17u5pZA0lz787sOSO2Xvi7nlZCFkfUCvKr7fReT4EpTjZCcTmDfN0XPuSbgZDZD"
+auth = "EAACEdEose0cBAPRmC29kRmCpBEAVqSDv3MwYKMAUIteZCbh4rKR40MFbUrO6VUPi7o5UMmKRzkjVs2reZAQPJh5KFZC2DpxtQkUhTEkGK7fRgZCPZBGyPl5SqpZBX300kfZAgZA0NKga7r4b2YZCYS8PZB88H36KXZAUOQfK50Du1N6XwZDZD"
 
 ## name of file, add in location if not in working directory
 ## comment necessary code block for df on other file
 # file_name = "FacebookUser.csv"
 file_name = "supercenterinfo.csv"
+supercenter_file = True
 
 ## how far back do you want to search?
 days = 365
 ## run a test with a specific store
 test = True
+
 test_store = "Walmart2037"
 
 
